@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+
+
+    <dimen name="main_activity_horizontal_margin">64dp</dimen>
+    <dimen name="main_activity_vertical_margin">23dp</dimen>
+
+    <dimen name="button_horizontal_padding">16dp</dimen>
+    <dimen name="button_vertical_padding">10dp</dimen>
+
+
+    <dimen name="list_view_item_height">40dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_largest">30sp</dimen>
+    <dimen name="text_size_larger">24sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_normal">20sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+    <dimen name="text_size_small_epd">18px</dimen>
+    <dimen name="text_size_smallest">12sp</dimen>
+    <dimen name="text_size_mini">8sp</dimen>
+
+    <dimen name="book_read_bottom_text">12dp</dimen>
+
+
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <bool name="default_line_indicator_centered">true</bool>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_circle_radius">12dp</dimen>
+    <dimen name="button_layout_height">63dp</dimen>
+    <dimen name="bottom_operator_layout_height">160dp</dimen>
+
+    <dimen name="more_settings_pop_window_width">144dp</dimen>
+    <dimen name="more_settings_pop_window_width_epd">144px</dimen>
+    <dimen name="more_settings_pop_window_height">133dp</dimen>
+    <dimen name="more_settings_pop_window_height_epd">133px</dimen>
+
+    <dimen name="catalog_common_margin">20dp</dimen>
+    <dimen name="catalog_book_name_text_size">22sp</dimen>
+    <dimen name="catalog_book_author_text_size">16sp</dimen>
+    <dimen name="catalog_book_page_num_text_size">12sp</dimen>
+    <dimen name="pdf_listview_divder_height">16dp</dimen>
+    <dimen name="more_settings_epd_stroke_width">2px</dimen>
+    <dimen name="progress_text_margin">64dp</dimen>
+</resources>

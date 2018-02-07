@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/bottom_operator_layout"/>
+
+        <!--墨迹-->
+        <ImageButton
+            android:id="@+id/iv_ink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_operator"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:contentDescription="@string/ink"
+            android:src="@drawable/ink_icon"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/annot_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/top_menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ViewAnimator
+            android:id="@+id/top_menu_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/menu_bg_color">
+
+            <RelativeLayout
+                android:id="@+id/layout_menu_top_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_return"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_return"/>
+
+                <!--搜索-->
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:contentDescription="@string/search_document"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/search_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_search"
+                    android:layout_toRightOf="@id/iv_return"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/text_size_normal"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_menu_top_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ivCancelSearch"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/ic_cancel"/>
+
+                <EditText
+                    android:id="@+id/searchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ivSearchBack"
+                    android:layout_toRightOf="@+id/ivCancelSearch"
+                    android:background="@drawable/search"
+                    android:hint="@string/search"
+                    android:inputType="text"
+                    android:singleLine="true"/>
+
+                <ImageButton
+                    android:id="@+id/ivSearchBack"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ivSearchForward"
+                    android:background="@drawable/button"
+                    android:contentDescription="@string/search_backwards"
+                    android:src="@drawable/ic_arrow_left"/>
+
+                <ImageButton
+                    android:id="@+id/ivSearchForward"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button"
+                    android:contentDescription="@string/search_forwards"
+                    android:src="@drawable/ic_arrow_right"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_menu_top_accept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_black"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/cancelAcceptButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:background="@drawable/button"
+                    android:contentDescription="@string/cancel"
+                    android:onClick="OnCancelAcceptButtonClick"
+                    android:src="@drawable/ic_cancel"/>
+
+                <TextView
+                    android:id="@+id/annotType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/acceptButton"
+                    android:layout_toRightOf="@+id/cancelAcceptButton"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/common_white"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/acceptButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:background="@drawable/button"
+                    android:contentDescription="@string/accept"
+                    android:onClick="OnAcceptButtonClick"
+                    android:src="@drawable/ic_check"/>
+            </RelativeLayout>
+
+        </ViewAnimator>
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/top_menu_switcher"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/menu_bg_color"
+            android:gravity="center"
+            android:textColor="@color/common_white"
+            android:textSize="18dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_layout_height"
+    >
+
+    <TextView
+        android:id="@+id/catalog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="第一章"
+        android:textSize="@dimen/catalog_book_author_text_size"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+
+    <TextView
+        android:id="@+id/catalog_page_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="100"
+        android:textSize="@dimen/catalog_book_page_num_text_size"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/tiled_background</item>
+   </style>
+
+    <style name="annot_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+</resources>

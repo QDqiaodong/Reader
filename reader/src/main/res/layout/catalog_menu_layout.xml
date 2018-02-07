@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/catalog_menu"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/catalog_pop_window_bg"
+              android:gravity="center"
+              android:paddingLeft="10dp"
+              android:paddingRight="@dimen/catalog_common_margin"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="智慧教育"
+            android:textColor="@color/catalog_book_name_color"
+            android:textSize="@dimen/catalog_book_name_text_size"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/catalog_book_author_color"
+                android:textSize="@dimen/catalog_book_author_text_size"
+                />
+
+            <TextView
+                android:id="@+id/tvTotalSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="共357页"
+                android:textColor="@color/catalog_book_author_color"
+                android:textSize="@dimen/catalog_book_author_text_size"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/catalog_common_margin"
+        android:layout_marginRight="@dimen/catalog_common_margin"
+        android:background="@color/catalog_divider_line_color"
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/catalog_divider_line_color"
+        android:dividerHeight="1dp"
+        android:listSelector="#00000000"/>
+
+</LinearLayout>
