@@ -21,7 +21,7 @@
 
 ９．支持页面缩放
 
-demo下载：[Reader.apk](https://github.com/JustWayward/BookReader/raw/master/体验demo/任阅-20170129.apk)
+demo下载：[Reader.apk](https://github.com/QDqiaodong/Reader/blob/master/Demo/reader.apk)
 
 ## 架构　MVP(以下为MVP类图结构)
 ![image](https://github.com/QDqiaodong/Reader/blob/master/screenshots/MVP%E7%B1%BB%E5%9B%BE.jpg)
