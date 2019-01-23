@@ -1,7 +1,7 @@
 项目地址：[https://github.com/QDqiaodong/Reader](https://github.com/QDqiaodong/Reader)
 
 # Reader
-####高仿多看阅读器apk，支持PDF解析.文档支持搜索，高亮文字，墨迹等功能
+#### 高仿多看阅读器apk，支持PDF解析.文档支持搜索，高亮文字，墨迹等功能
 
 １．目录（解析文件目录，并且可以实现跳转）
 
